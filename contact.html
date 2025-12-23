@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us | Niina Tata</title>
+    <link rel="shortcut icon" href="img/logo nt favicon.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+
+</head>
+
+<body>
+
+    <!-- ==================== TOP BAR ==================== -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-end">
+                    <p><a href="tel:+358466103347">Call us at +358 46610 3347</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==================== END TOP BAR ==================== -->
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logon.png" alt="Niina Tata Logo" title="Niina Tata Logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active" aria-current="page">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== END NAVIGATION ==================== -->
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Get In Touch With Us</h1>
+                    <p class="lead mb-4">Have questions or ready to start your project? We're here to help you bring your vision to life.</p>
+                    <div class="d-flex justify-content-center flex-wrap gap-3">
+                        <a href="#contact-form" class="btn btn-danger btn-lg">Send Message</a>
+                        <a href="tel:+358466103347" class="btn btn-outline-light btn-lg">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== END HERO ==================== -->
+
+    <!-- ==================== CONTACT FORM SECTION ==================== -->
+    <section class="py-5" id="contact-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="text-dark">Contact Us</h2>
+                    <div class="border-top border-primary w-25 mx-auto my-3"></div>
+                    <p class="lead">Send us a message and we'll get back to you within 24 hours</p>
+                </div>
+            </div>
+            
+            <div class="row py-4">
+                <!-- Contact Form -->
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <div class="contact-card card">
+                        <div class="card-body p-4 p-lg-5">
+                            <h3 class="card-title text-dark mb-4">Send Us a Message</h3>
+                            
+                            <form id="contactForm" novalidate>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your first name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your last name.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid email address.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" placeholder="+358 40 123 4567">
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="company" class="form-label">Company Name</label>
+                                    <input type="text" class="form-control" id="company" placeholder="Optional">
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="" selected disabled>Select a subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="quote">Request a Quote</option>
+                                        <option value="web-design">Web Design Project</option>
+                                        <option value="ecommerce">E-commerce Development</option>
+                                        <option value="maintenance">Website Maintenance</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a subject.
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="budget" class="form-label">Project Budget (Optional)</label>
+                                    <select class="form-select" id="budget">
+                                        <option value="" selected>Select budget range</option>
+                                        <option value="under-1000">Under €1,000</option>
+                                        <option value="1000-3000">€1,000 - €3,000</option>
+                                        <option value="3000-5000">€3,000 - €5,000</option>
+                                        <option value="5000-10000">€5,000 - €10,000</option>
+                                        <option value="over-10000">Over €10,000</option>
+                                        <option value="not-sure">Not sure yet</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="message" rows="6" placeholder="Tell us about your project or inquiry..." required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please enter your message.
+                                    </div>
+                                    <div class="form-text">Maximum 1000 characters</div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter">
+                                        <label class="form-check-label" for="newsletter">
+                                            Subscribe to our newsletter for updates, tips, and special offers
+                                        </label>
+                                    </div>
+                                    <div class="form-check mt-2">
+                                        <input class="form-check-input" type="checkbox" id="privacy" required>
+                                        <label class="form-check-label" for="privacy">
+                                            I agree to the <a href="#" class="text-primary">Privacy Policy</a> <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            You must agree before submitting.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                                
+                                <div class="alert alert-success mt-3 d-none" id="successAlert">
+                                    <i class="fas fa-check-circle me-2"></i>
+                                    <strong>Thank you!</strong> Your message has been sent successfully. We'll get back to you within 24 hours.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information & Map -->
+                <div class="col-lg-4">
+                    <!-- Contact Information -->
+                    <div class="contact-card card mb-4">
+                        <div class="card-body p-4">
+                            <h4 class="card-title text-dark mb-4">Contact Information</h4>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h5 class="h6 fw-bold mb-2">Our Location</h5>
+                                    <p class="mb-0">Nuijatie 4 c</p>
+                                    <p class="mb-0">Vantaa, 01650</p>
+                                    <p class="mb-0">Finland</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h5 class="h6 fw-bold mb-2">Phone Numbers</h5>
+                                    <p class="mb-1">Primary: +358 46610 3347</p>
+                                    <p class="mb-0">Support: +358 466 10 1717</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h5 class="h6 fw-bold mb-2">Email Address</h5>
+                                    <p class="mb-1">info@niinatata.com</p>
+                                    <p class="mb-0">support@niinatata.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h5 class="h6 fw-bold mb-2">Business Hours</h5>
+                                    <ul class="business-hours mb-0">
+                                        <li><span class="day">Mon - Fri:</span> 9:00 AM - 6:00 PM</li>
+                                        <li><span class="day">Saturday:</span> 10:00 AM - 4:00 PM</li>
+                                        <li><span class="day">Sunday:</span> Closed</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Google Map -->
+                    <div class="contact-card card">
+                        <div class="card-body p-4">
+                            <h5 class="card-title text-dark mb-3">Find Us On The Map</h5>
+                            <div class="map-container">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.3988014650308!2d24.8237958768671!3d60.25686237507673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df6fdc49d54a7%3A0x3daff904d962bb94!2sNuijatie%204%2C%2001650%20Vantaa!5e0!3m2!1sen!2sfi!4v1766478504053!5m2!1sen!2sfi"
+                                    width="100%" 
+                                    height="300" 
+                                    style="border:0;" 
+                                    allowfullscreen 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    title="Niina Tata Office Location">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== END CONTACT FORM ==================== -->
+
+    <!-- ==================== FAQ SECTION ==================== -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="text-dark">Frequently Asked Questions</h2>
+                    <div class="border-top border-primary w-25 mx-auto my-3"></div>
+                    <p class="lead">Find quick answers to common questions</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="accordion faq-accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How quickly can you start a new project?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We can typically start a project within <strong>1-2 weeks</strong> of receiving the initial requirements and deposit. The exact timeline depends on our current project load and the complexity of your project. For urgent projects, we offer expedited startup options - contact us for availability.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What is your pricing structure?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer flexible pricing options:
+                                    <ul class="mt-2">
+                                        <li><strong>Fixed-price projects</strong> for well-defined scopes</li>
+                                        <li><strong>Hourly rates</strong> for ongoing work or maintenance</li>
+                                        <li><strong>Retainer packages</strong> for regular support and updates</li>
+                                        <li><strong>Monthly maintenance plans</strong> starting at €199/month</li>
+                                    </ul>
+                                    Contact us for a customized quote based on your specific needs.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Do you provide ongoing support and maintenance?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! We offer comprehensive support packages including:
+                                    <ul class="mt-2">
+                                        <li>Monthly maintenance and security updates</li>
+                                        <li>Content updates and changes</li>
+                                        <li>Performance monitoring and optimization</li>
+                                        <li>Regular backups and security scans</li>
+                                        <li>Technical support via email and phone</li>
+                                    </ul>
+                                    All our website packages include 1-3 months of free support depending on the package selected.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What technologies do you specialize in?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our team specializes in modern web technologies including:
+                                    <div class="row mt-2">
+                                        <div class="col-md-6">
+                                            <ul>
+                                                <li>HTML5, CSS3, JavaScript</li>
+                                                <li>Bootstrap 5 & Tailwind CSS</li>
+                                                <li>React.js & Vue.js</li>
+                                                <li>PHP & Laravel</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul>
+                                                <li>WordPress & Custom Themes</li>
+                                                <li>E-commerce (WooCommerce, Shopify)</li>
+                                                <li>API Integration</li>
+                                                <li>Responsive Design</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="contact-card card h-100">
+                        <div class="card-body p-4">
+                            <h4 class="card-title text-dark mb-4">Emergency Support</h4>
+                            <p class="card-text">For urgent technical issues requiring immediate attention, we offer 24/7 emergency support for our premium clients.</p>
+                            
+                            <div class="alert emergency-alert mt-4">
+                                <h5 class="alert-heading">
+                                    <i class="fas fa-exclamation-triangle me-2"></i>Emergency Contact
+                                </h5>
+                                <p class="mb-2"><strong>Phone:</strong> +358 46610 3347</p>
+                                <p class="mb-2"><strong>Email:</strong> emergency@niinatata.com</p>
+                                <p class="mb-0"><strong>Response Time:</strong> Within 2 hours</p>
+                            </div>
+                            
+                            <p class="text-muted mt-3"><small>* Emergency support rates apply. Available for premium support package customers only.</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== END FAQ ==================== -->
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3">Ready to Start Your Project?</h2>
+                    <p class="lead mb-0">Let's discuss how we can help bring your ideas to life with custom web solutions.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                    <div class="d-flex flex-column flex-lg-row gap-3">
+                        <a href="tel:+358466103347" class="btn btn-light btn-lg">
+                            <i class="fas fa-phone me-2"></i>Call Now
+                        </a>
+                        <a href="#contact-form" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Send Message
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== END CTA ==================== -->
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container">
+            <div class="row text-light text-center py-4 justify-content-center">
+                <div class="col-sm-10 col-md-8 col-lg-6">
+                    <img src="img/logo nt white.png" alt="Niina Tata White Logo">
+                    <p>Design and development solutions for the modern marketplace.</p>
+                    <ul class="social pt-3">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ==================== END FOOTER ==================== -->
+
+    <!-- ==================== SOCKET ==================== -->
+    <div class="socket text-light text-center py-3">
+        <p>&copy; <a href="index.html" class="text-light">niinatata.com</a></p>
+    </div>
+    <!-- ==================== END SOCKET ==================== -->
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <!-- Bootstrap 5 Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/contact.js"></script>
+    <!-- ==================== END SCRIPTS ==================== -->
+</body>
+</html>

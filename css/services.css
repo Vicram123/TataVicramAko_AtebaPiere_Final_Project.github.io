@@ -1,0 +1,173 @@
+
+    .service-hero {
+      background: linear-gradient(rgba(73, 129, 179, 0.9), rgba(122, 174, 196, 0.9)), url('../img/services-hero.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 6rem 0 4rem;
+      margin-top: -1px;
+    }
+    
+    .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      height: 100%;
+      margin-bottom: 2rem;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+    
+    .service-icon {
+      width: 80px;
+      height: 80px;
+      background: #4981b3;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: -40px auto 1.5rem;
+      color: white;
+      font-size: 2rem;
+      box-shadow: 0 5px 15px rgba(73, 129, 179, 0.3);
+    }
+    
+    .service-card .card-body {
+      padding: 2rem 1.5rem;
+    }
+    
+    .price-tag {
+      background: #4981b3;
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 25px;
+      font-weight: 600;
+      display: inline-block;
+      margin: 1rem 0;
+    }
+    
+    .feature-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .feature-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .feature-list li:last-child {
+      border-bottom: none;
+    }
+    
+    .feature-list i {
+      color: #4981b3;
+      margin-right: 0.5rem;
+    }
+    
+    .process-step {
+      text-align: center;
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      height: 100%;
+    }
+    
+    .step-number {
+      width: 50px;
+      height: 50px;
+      background: #AC2615;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    
+    .faq-item {
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+    
+    .faq-question {
+      padding: 1.5rem;
+      background: #f8f9fa;
+      border: none;
+      width: 100%;
+      text-align: left;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .faq-answer {
+      padding: 1.5rem;
+      background: white;
+      border-top: 1px solid #dee2e6;
+    }
+    
+    .cta-section {
+      background: linear-gradient(135deg, #4981b3 0%, #7aaec4 100%);
+      color: white;
+      padding: 4rem 0;
+      border-radius: 15px;
+      margin: 4rem 0;
+    }
+    
+    .package-comparison table {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .package-comparison th {
+      background: #4981b3;
+      color: white;
+      border: none;
+      padding: 1.5rem;
+    }
+    
+    .package-comparison td {
+      padding: 1rem 1.5rem;
+      vertical-align: middle;
+    }
+    
+    .package-comparison .fa-check {
+      color: #28a745;
+    }
+    
+    .package-comparison .fa-times {
+      color: #dc3545;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .service-hero {
+        padding: 4rem 0 2rem;
+      }
+      
+      .service-hero h1 {
+        font-size: 2rem;
+      }
+      
+      .package-comparison table {
+        font-size: 0.9rem;
+      }
+      
+      .process-step {
+        margin-bottom: 1rem;
+      }
+    }
